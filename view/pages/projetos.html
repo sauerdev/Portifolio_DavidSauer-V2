@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="./../css/projetos/projetos.css">
+    <script src="https://kit.fontawesome.com/10b1b3eb1e.js" crossorigin="anonymous"></script>
+    <script type="module" src="./../../controller/projetos/projetos.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img id="logo-imagem" src="./../../assets/img/naveship.jpg">
+            <p id="aluno">Aluno WEB</p>
+        </div>
+        <div class="butoes">
+            <button class="btn" onclick="window.location.href='./../../index.html'">
+                <h6>Home</h6>
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button class="btn" onclick="window.location.href='./formacao.html'">
+                <h6>Formação</h6>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </button>
+            <button class="btn" onclick="window.location.href='./projetos.html'">
+                <h6>Projetos</h6>
+                <i class="fa-solid fa-folder-open"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="banners">
+        <div class="banner"> </div>
+        <div class="banner" style="background-color: rgb(255, 255, 255);"> </div>
+        <div class="banner"> </div>
+        <div class="banner"> </div>
+    </nav>
+
+    <nav id="btns_banners">
+        <button class="btn_banner" onclick="trocarBanner(0)"></button>
+        <button class="btn_banner" onclick="trocarBanner(1)"></button>
+        <button class="btn_banner" onclick="trocarBanner(2)"></button>
+        <button class="btn_banner" onclick="trocarBanner(3)"></button>
+    </nav>
+
+    <section>
+        <nav id="icon_menu" onclick="trocarMenu()">
+            <div id="barra1"></div>
+            <div id="barra2"></div>
+            <div id="barra3"></div>
+        </nav>
+        <nav id="menu">
+
+        </nav>
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>

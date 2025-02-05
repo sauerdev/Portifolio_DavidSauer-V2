@@ -1,0 +1,57 @@
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(20, 50, 88);
+}
+
+#logo {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: #ffffff  
+}
+
+#logo-imagem {
+    height:100%;
+    margin: 0 5vw;  
+    transition: transform 1s ease-in-out
+}
+
+#logo-imagem:hover {
+    transform: rotate(360deg);
+    
+}
+
+#aluno {
+    font-size: 22px;
+}
+
+.btn {
+    width: 10vw;
+    height: 5vh;
+    justify-content: space-evenly;
+    background-color: #fcfcfc; /* Cor de fundo */
+    margin: 10px;
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 25px; /* Arredonda os cantos */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: all 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+    font-family: "Cinzel", serif;
+
+}
+
+.btn:hover {
+    width:10.5vw;
+    height:5.5vh;
+    color: #4db8f7
+}
+

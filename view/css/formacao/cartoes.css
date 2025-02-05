@@ -1,0 +1,89 @@
+@import url(./cadastro.css); 
+@import url(./atualizacao.css);
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte */
+  justify-content: center; 
+  padding: 1vw;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+#cartoes {
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+  gap: 1vw; /* Espaço entre os cartões */
+}
+
+
+.card {
+  width:15vw; 
+  height: 28vh;;
+  background-color: #0b2877;
+  padding: 2vh; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  color: #ffffff;
+  font-size: 1.2em; 
+  cursor: pointer;
+
+
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.boxInfos {
+  width: 15vw;
+  height: 6vh;
+
+  margin-top: 0.25vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttonContainer{
+  height: 10vh;
+  width: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: -2vw;
+}
+
+.btn_add_card{
+  width:17vw; 
+  height: 32vh;;
+  background-color: #0b2877; 
+  border-radius: 10px; 
+  border: none;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  color: #ffffff;
+  font-size: 15vw; 
+  cursor: pointer;
+}
+
+.btn_add_card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}

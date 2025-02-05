@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="./../css/formacao/formacao.css">
+   
+    <script src="https://kit.fontawesome.com/10b1b3eb1e.js" crossorigin="anonymous"></script>
+    <script type="module" src="./../../controller/formacao/formacao.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img id="logo-imagem" src="./../../assets/img/naveship.jpg">
+            <p id="aluno">Aluno WEB</p>
+        </div>
+        <div class="butoes">
+            <button class="btn" onclick="window.location.href='./../../index.html'">
+                <h6>Home</h6>
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button class="btn" onclick="window.location.href='./formacao.html'">
+                <h6>Formação</h6>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </button>
+            <button class="btn" onclick="window.location.href='./projetos.html'">
+                <h6>Projetos</h6>
+                <i class="fa-solid fa-folder-open"></i>
+            </button>
+        </div>
+    </header>
+
+
+
+    <section id="cartoes" class="container"></section>
+
+    <section id="telaCad">
+        <div id="inputs-cadastro">
+            <input type="text" id="nome" placeholder="Nome" maxlength="50" required>
+            <p id="contador-nome" class="contador">0/50</p> <!-- Contador para o nome -->
+    
+            <input type="text" id="descricao" placeholder="Descrição" maxlength="100" required>
+            <p id="contador-descricao" class="contador">0/100</p> <!-- Contador para a descrição -->
+    
+            <div id="buttons-tela-cadastro">
+                <button onclick="recolheDados()">SALVAR</button>
+                <button onclick="escondeTelaCad()">CANCELAR</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="telaAtt">
+        <div id="inputs_att">
+            <input id="nomesAtt" type="text" placeholder="Nome" required>
+            <input id="descricaoAtt" type="text" placeholder="Descrição" required>
+            <div id="buttons_telaatt">
+                <button onclick="recolheDadosAtt()">SALVAR</button>
+                <button onclick="escondeTelaAtt()">CANCELAR</button>
+            </div>
+        </div>
+    </section>
+    <section id="confirm_delete">
+        <div class="smallScreen">
+            <h1>Tem certeza que deseja excluir o cartão?</h1>
+            <div class="btns_confirm">
+                <button class="btn_confirm" id="btn_sim" onclick="recolheDadosDel()">SIM</button>
+                <button class="btn_confirm" id="btn_nao" onclick="escodeTelaDel()">NÃO</button>
+            </div>
+        </div>
+    </section>
+
+</body>
